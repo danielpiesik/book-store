@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_DB=bookstore
+      - POSTGRES_PASSWORD=pass#
+
+  bookstore:
+    build:
+      context: .
+      dockerfile: ./docker/local/Dockerfile
+    image: bookstore
+    container_name: bookstore
+    volumes:
+      - ./bookstore:/app/bookstore
+    environment:
+      - POSTGRES_PASSWORD=pass#
+    command: /start
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
