@@ -41,7 +41,6 @@ INSTALLED_APPS = [
 
     # third part applications
     'isbn_field',
-    'languages',
 
     # internal applications
     'authors',
