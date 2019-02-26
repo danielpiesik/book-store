@@ -6,4 +6,6 @@ set -o nounset
 
 
 /scripts/wait-for-postgres.sh db
-tail -F anything
+
+./manage.py migrate
+./manage.py runserver 0.0.0.0:8000

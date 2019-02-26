@@ -1,1 +1,5 @@
+__pycache__
 .vscode
+
+bookstore/config/secrets.json
+bookstore/config/settings.json
