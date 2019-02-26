@@ -40,8 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third part applications
+    'isbn_field',
+    'languages',
 
     # internal applications
+    'authors',
+    'books',
 ]
 
 MIDDLEWARE = [
