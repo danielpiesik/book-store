@@ -11,14 +11,13 @@ class Author(models.Model):
     birthday = models.DateField()
     nationality = models.CharField(max_length=2, choices=NATIONALITIES)
 
-    def calculate_age(self):
+    @property
+    def age(self):
         return int((datetime.date.today() - self.birthday).days / 365.25)
 
-    def prepare_name(self):
+    @property
+    def name(self):
         return f'{self.first_name} {self.last_name}'
-
-    age = property(calculate_age)
-    name = property(prepare_name)
 
     def __str__(self):
         return self.name
