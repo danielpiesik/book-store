@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # internal applications
     'authors',
     'books',
+    'orders',
     'users',
 ]
 
