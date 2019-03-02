@@ -1,0 +1,10 @@
+{
+    "DEBUG": true,
+
+    "ALLOWED_HOSTS": ["*"],
+
+    "DB_NAME": "bookstore",
+    "DB_USER": "postgres",
+    "DB_HOST": "db",
+    "DB_PORT": 5432
+}
