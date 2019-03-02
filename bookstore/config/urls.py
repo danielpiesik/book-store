@@ -8,6 +8,7 @@ urlpatterns = [
     path('', include('authors.urls')),
     path('', include('books.urls')),
     path('', include('orders.urls')),
+    path('', include('users.urls')),
 ]
 
 if settings.DEBUG:
