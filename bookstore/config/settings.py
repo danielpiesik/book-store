@@ -40,8 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third part applications
+    'isbn_field',
 
     # internal applications
+    'authors',
+    'books',
+    'orders',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +88,8 @@ TEMPLATES = [
 
 ROOT_URLCONF = 'config.urls'
 WSGI_APPLICATION = 'config.wsgi.application'
+
+AUTH_USER_MODEL = 'users.User'
 
 AUTH_PASSWORD_VALIDATORS = []
 

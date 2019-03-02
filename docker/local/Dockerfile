@@ -1,5 +1,7 @@
 FROM python:3.7-alpine
 
+ENV PYTHONUNBUFFERED 0
+
 RUN apk update \
     # psycopg2 dependencies
     && apk add --no-cache --virtual=build-deps gcc musl-dev postgresql-dev \
