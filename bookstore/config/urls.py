@@ -15,7 +15,7 @@ urlpatterns = [
 ]
 
 swagger_view = get_swagger_view(
-    title='API Documentation',
+    title='Bookstore API',
     patterns=urlpatterns,
 )
 
