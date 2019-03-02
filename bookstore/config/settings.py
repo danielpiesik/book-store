@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_filters',
     'isbn_field',
     'rest_framework',
+    'rest_framework_swagger',
 
     # internal applications
     'authors',
