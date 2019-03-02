@@ -1,0 +1,32 @@
+-   model: orders.order
+    pk: 1
+    fields:
+        buyer: 1
+        price: '36.05'
+        shipping_date: 2019-03-03
+        order_date: 2019-03-02 20:06:06.626847+00:00
+        books: [1, 3]
+-   model: orders.order
+    pk: 2
+    fields:
+        buyer: 1
+        price: '10.50'
+        shipping_date: 2019-03-03
+        order_date: 2019-03-02 20:06:23.177492+00:00
+        books: [2]
+-   model: orders.order
+    pk: 3
+    fields:
+        buyer: 1
+        price: '26.50'
+        shipping_date: 2019-03-03
+        order_date: 2019-03-02 20:06:28.497970+00:00
+        books: [2, 3]
+-   model: orders.order
+    pk: 4
+    fields:
+        buyer: 1
+        price: '46.55'
+        shipping_date: 2019-03-03
+        order_date: 2019-03-02 20:06:33.710834+00:00
+        books: [1, 2, 3]

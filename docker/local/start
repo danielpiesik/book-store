@@ -8,4 +8,5 @@ set -o nounset
 /scripts/wait-for-postgres.sh db
 
 ./manage.py migrate
+./manage.py loaddata fixtures.yaml
 ./manage.py runserver 0.0.0.0:8000

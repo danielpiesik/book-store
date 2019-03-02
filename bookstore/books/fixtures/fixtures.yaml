@@ -1,0 +1,30 @@
+-   model: books.book
+    pk: 1
+    fields:
+        title: Harry Potter
+        length: 789
+        price: '20.05'
+        genre: fantasy
+        isbn: 0123456789
+        language: PL
+        authors: [1]
+-   model: books.book
+    pk: 2
+    fields:
+        title: Das Zimmer
+        length: 89
+        price: '10.50'
+        genre: crime
+        isbn: '1111111111'
+        language: GB
+        authors: [1, 2]
+-   model: books.book
+    pk: 3
+    fields:
+        title: Poradnik programisty
+        length: 128
+        price: '16.00'
+        genre: thriller
+        isbn: '2222222222'
+        language: GB
+        authors: [3]
