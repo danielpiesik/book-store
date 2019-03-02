@@ -1,8 +1,8 @@
 # Bookstore
 
-Bookstore is a simple application for buying books.  
-A user of application can create an account, and after login he has read access to books, and he is able to create an order.  
-The admin can manage of books and he can create another admin account.
+The Bookstore is a simple application for buying books.  
+A user of the application can create an account, and after login, he has read access to books, and he is able to create an order.  
+The admin can manage books and he can create another admin account.
 
 
 This is a recruitment task.  
@@ -10,7 +10,7 @@ The full task definition is available [here](doc/task.pdf).
 
 
 
-# Pre installation
+# Pre-installation
 
 1. You need to install [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 1. You need to install [docker-compose](https://docs.docker.com/compose/install/).
@@ -31,7 +31,7 @@ The full task definition is available [here](doc/task.pdf).
 
     Open the `bookstore/config/settings.json` file and edit according to your needs.
 
-    :warning: Edit this file only if you know what are you doing.
+    :warning: Edit this file only if you know what you are doing.
 
 1. Configure settings
 
@@ -47,7 +47,7 @@ The full task definition is available [here](doc/task.pdf).
 
     :warning: If you don't know how to fill the file, please contact application creator [Daniel Piesik](https://github.com/danielpiesik)
 
-1. Build docker image
+1. Build a docker image
     ```sh
     docker-compose -f local.yml build
     ```
