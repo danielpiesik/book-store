@@ -7,12 +7,20 @@ from rest_framework_swagger.views import get_swagger_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('documentation/', get_swagger_view(title='Bookstore API')),
 
     path('', include('authors.urls')),
     path('', include('books.urls')),
     path('', include('orders.urls')),
     path('', include('users.urls')),
+]
+
+swagger_view = get_swagger_view(
+    title='API Documentation',
+    patterns=urlpatterns,
+)
+
+urlpatterns = urlpatterns + [
+    path('documentation/', swagger_view),
 ]
 
 if settings.DEBUG:
