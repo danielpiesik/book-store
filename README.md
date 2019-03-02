@@ -33,11 +33,10 @@ The full task definition is available [here](doc/task.pdf).
 
     :warning: Edit this file only if you know what are you doing.
 
-
 1. Configure settings
 
     :information_source: **You can skip this step.**  
-    To simplify demo I added already configured `secrets.json` file to repository.
+    To simplify demo I added already configured `secrets.json` file to the repository.
 
 
     ```sh
@@ -46,8 +45,7 @@ The full task definition is available [here](doc/task.pdf).
 
     Open the `bookstore/config/secrets.json` file and fill all of the keys.
 
-    :warning: If you don't know how to fill the file, please contact application creator @danielpiesik
-
+    :warning: If you don't know how to fill the file, please contact application creator [Daniel Piesik](https://github.com/danielpiesik)
 
 1. Build docker image
     ```sh
@@ -63,6 +61,5 @@ The full task definition is available [here](doc/task.pdf).
     ```sh
     docker-compose -f local.yml up
     ```
-
 
 1. The API is available on [http://localhost:8000](http://localhost:8000)
