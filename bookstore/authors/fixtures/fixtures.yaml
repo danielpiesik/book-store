@@ -1,0 +1,9 @@
+-   model: authors.author
+    pk: 1
+    fields: {first_name: Daniel, last_name: Piesik, birthday: 1992-12-11, nationality: PL}
+-   model: authors.author
+    pk: 2
+    fields: {first_name: Gregor, last_name: Miller, birthday: 1980-03-13, nationality: DE}
+-   model: authors.author
+    pk: 3
+    fields: {first_name: David, last_name: Smith, birthday: 1990-12-03, nationality: GB}

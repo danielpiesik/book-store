@@ -4,3 +4,4 @@ django-filter==2.1.0
 django-isbn-field==0.5.2
 djangorestframework==3.9.1
 psycopg2==2.7.7
+pyyaml==3.13
