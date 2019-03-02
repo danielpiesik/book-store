@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third part applications
+    'django_filters',
     'isbn_field',
+    'rest_framework',
 
     # internal applications
     'authors',
