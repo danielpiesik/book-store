@@ -1,14 +1,8 @@
 from django.contrib.auth.models import Group, Permission
 from django.core.management.base import BaseCommand
 
-# GROUPS = {
-#     'admin': [],
-#     'buyer': [],
-# }
-
 
 GROUPS = ['admin', 'buyer']
-# MODELS = ['video', 'article', 'license', 'list', 'page', 'client']
 
 
 class Command(BaseCommand):
