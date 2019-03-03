@@ -1,10 +1,10 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group
+from django.db import models
 
 
 class User(AbstractUser):
-    pass
-
-    def save(self, *args, **kwargs):
-        if not self.pk:
-            self.set_password(self.password)
-        super().save(*args, **kwargs)
+    role = models.ForeignKey(
+        'auth.Group',
+        on_delete=models.CASCADE,
+        related_name='users',
+    )
