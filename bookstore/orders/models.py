@@ -20,8 +20,6 @@ class Order(models.Model):
     order_date = models.DateTimeField(default=timezone.now)
 
     def save(self, *args, **kwargs):
-        from users.models import User
-        self.buyer = User.objects.get(id=1)  # TODO: set based on logged user
         self.shipping_date = self.calculate_shipping_date()
         super().save(*args, **kwargs)
 
