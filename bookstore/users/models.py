@@ -8,3 +8,11 @@ class User(AbstractUser):
         on_delete=models.CASCADE,
         related_name='users',
     )
+
+    @property
+    def is_admin(self):
+        return self.role.name == 'admin'
+
+    @property
+    def is_buyer(self):
+        return self.role.name == 'buyer'
