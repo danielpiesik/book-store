@@ -62,4 +62,4 @@ The full task definition is available [here](doc/task.pdf).
     docker-compose -f local.yml up
     ```
 
-1. The API is available on [http://localhost:8000](http://localhost:8000)
+1. The API is available on [http://localhost:8000/documentation](http://localhost:8000/documentation)

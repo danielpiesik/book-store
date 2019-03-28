@@ -3,7 +3,6 @@
     fields:
         password: pbkdf2_sha256$120000$8Opr1o7jyBoJ$rSg+L9kUeoz38HUYs0bCHibHirDm9mUJgh2KgdsSrGE=  # 123
         last_login: null
-        is_superuser: false
         username: jkowalskii
         first_name: Jan
         last_name: Kowalski
@@ -11,6 +10,7 @@
         is_staff: false
         is_active: true
         date_joined: 2019-03-02 19:53:41.548482+00:00
+        role: 2
         groups: []
         user_permissions: []
 -   model: users.user
@@ -18,14 +18,14 @@
     fields:
         password: pbkdf2_sha256$120000$bi0MvCPojPu4$4y0rXPEczONDVOt6MopwZInmTNJ4IB6tymxtcOMJg0Y=  # 123
         last_login: null
-        is_superuser: false
         username: dpiesik
         first_name: Daniel
         last_name: Piesik
         email: ''
-        is_staff: false
+        is_staff: true
         is_active: true
         date_joined: 2019-03-02 19:58:03.884744+00:00
+        role: 1
         groups: []
         user_permissions: []
 -   model: users.user
@@ -33,7 +33,6 @@
     fields:
         password: pbkdf2_sha256$120000$8iKYaumcODR1$7QjBVgcAwCAac4E7aiTMZaz7YDwINfonEbYhb/5zY1I=  # 123
         last_login: null
-        is_superuser: false
         username: kuba_kubiak
         first_name: Kuba
         last_name: Kubiak
@@ -41,5 +40,6 @@
         is_staff: false
         is_active: true
         date_joined: 2019-03-02 19:59:08.221452+00:00
+        role: 2
         groups: []
         user_permissions: []
