@@ -35,4 +35,6 @@ settings.REST_FRAMEWORK.update({
     ),
 })
 
-SHOW_TOOLBAR_CALLBACK = show_toolbar
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': show_toolbar,
+}
