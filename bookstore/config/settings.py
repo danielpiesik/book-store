@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import sys
@@ -38,11 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.sites',
 
     # third part applications
+    # 'allauth',
+    # 'allauth.account',
     'django_filters',
     'isbn_field',
+    # 'rest_auth',
+    # 'rest_auth.registration',
     'rest_framework',
+    # 'rest_framework.authtoken',
     'rest_framework_swagger',
 
     # internal applications
@@ -118,8 +125,27 @@ REST_FRAMEWORK = {
     'DEFAULT_PARSER_CLASSES': (
         'rest_framework.parsers.JSONParser',
     ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
 }
 
+REST_USE_JWT = True
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(
+        seconds=get_setting('JWT_TOKEN_EXPIRATION_SECONDS')
+    ),
+}
+REST_AUTH_SERIALIZERS = {
+    'LOGIN_SERIALIZER': 'utils.auth.UserLoginSerializer',
+    'USER_DETAILS_SERIALIZER': 'utils.auth.UserDetailsSerializer',
+}
+REST_AUTH_REGISTER_SERIALIZERS = {
+    'REGISTER_SERIALIZER': 'utils.auth.UserRegisterSerializer',
+}
 
 if DEBUG:
     from .debug import *

@@ -6,5 +6,7 @@
     "DB_NAME": "bookstore",
     "DB_USER": "postgres",
     "DB_HOST": "db",
-    "DB_PORT": 5432
+    "DB_PORT": 5432,
+
+    "JWT_TOKEN_EXPIRATION_SECONDS": 300
 }

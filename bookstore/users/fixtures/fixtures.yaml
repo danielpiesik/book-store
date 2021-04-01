@@ -8,6 +8,7 @@
         last_name: Kowalski
         email: ''
         is_staff: false
+        is_superuser: false
         is_active: true
         date_joined: 2019-03-02 19:53:41.548482+00:00
         role: 2
@@ -23,6 +24,7 @@
         last_name: Piesik
         email: ''
         is_staff: true
+        is_superuser: true
         is_active: true
         date_joined: 2019-03-02 19:58:03.884744+00:00
         role: 1
@@ -38,6 +40,7 @@
         last_name: Kubiak
         email: ''
         is_staff: false
+        is_superuser: false
         is_active: true
         date_joined: 2019-03-02 19:59:08.221452+00:00
         role: 2

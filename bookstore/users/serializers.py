@@ -20,5 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
         read_only_fields = ('last_login', 'date_joined')
 
     def create(self, validated_data):
-        validated_data['is_staff'] = validated_data['role'].name == 'admin'
+        is_admin = validated_data['role'].name == 'admin'
+        validated_data['is_staff'] = is_admin
+        validated_data['is_superuser'] = is_admin
         return User.objects.create_user(**validated_data)

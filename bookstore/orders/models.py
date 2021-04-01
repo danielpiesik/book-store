@@ -24,7 +24,7 @@ class Order(models.Model):
         super().save(*args, **kwargs)
 
     def calculate_shipping_date(self):
-        if self.order_date.hour < datetime.time(hour=13).hour:
+        if self.order_date.hour < 13:
             return self.order_date.date()
         else:
             return (self.order_date + datetime.timedelta(days=1)).date()
